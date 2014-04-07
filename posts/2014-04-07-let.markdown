@@ -1,0 +1,7 @@
+---
+title: let _ = blog.mirai.fr
+tags: blog
+author: Engil
+---
+
+Bientôt ici, des choses intéressantes.
