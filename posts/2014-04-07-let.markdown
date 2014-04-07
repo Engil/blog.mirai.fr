@@ -1,5 +1,5 @@
 ---
-title: let _ = blog.mirai.fr
+title: let () = blog.mirai.fr
 tags: blog
 author: Engil
 ---
