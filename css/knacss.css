@@ -198,11 +198,6 @@ kbd {
   border: 1px solid #999;
 }
 
-code {
-  padding: 2px 4px;
-  background: rgba(0, 0, 0, 0.04);
-  color: #b11;
-}
 
 mark {
   padding: 2px 4px;
@@ -1631,7 +1626,6 @@ input[type='submit']::-moz-focus-inner {
   table,
   td,
   th,
-  code,
   pre,
   samp {
     word-wrap: break-word;
@@ -2107,7 +2101,6 @@ h6,
   font-size: 1.4285714285714286em;
 }
 
-code,
 pre,
 samp,
 kbd {
@@ -2118,7 +2111,6 @@ kbd {
   line-height: 1;
 }
 
-code,
 kbd,
 mark {
   border-radius: 2px;
@@ -2135,12 +2127,6 @@ strong {
 kbd {
   padding: 0 2px;
   border: 1px solid #999;
-}
-
-code {
-  padding: 2px 4px;
-  background: rgba(0, 0, 0, 0.04);
-  color: #b11;
 }
 
 mark {
@@ -2248,7 +2234,6 @@ img,
 table,
 td,
 blockquote,
-code,
 pre,
 textarea,
 input,
