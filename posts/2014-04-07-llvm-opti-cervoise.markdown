@@ -9,12 +9,15 @@ j'ai pu voir quelles étaient les optimisations faites par LLVM dans le cas d'un
 
 Avant de voir cela, quelques mots tout d'abord sur l'API OCaml (officielle) pour LLVM qui est ici utilisée. Celle-ci propose, via son module [Llvm.PassManager](https://github.com/llvm-mirror/llvm/blob/master/bindings/ocaml/llvm/llvm.mli#L2419), deux manières fines d'optimiser les fonctions.
 À savoir:
+
  * Soit pour tout un module
  * Soit pour certaines fonctions seulement
+
 Il propose aussi par différents modules (localisés dans le dossier [transforms](https://github.com/llvm-mirror/llvm/tree/master/bindings/ocaml/transforms)), des moyens d'ajouter des optimisations, soit à la carte, soit avec un menu (correspondant aux options -O1, -O2, -O3 et -O4 de [Clang](https://fr.wikipedia.org/wiki/Clang)).
 
 Maintenant une note sur la manière dont LLVM marche et optimise le code.
 LLVM est un framework de compilation. Il est en particulier doté:
+
  * D'une machine virtuelle qui exécute du bytecode LLVM
  * D'un outil (llc) qui transforme le LLVM-IR (une sorte d'assembleur générique) en code natif ou en bytecode LLVM
  * Une librairie C++ servant à générer ce LLVM-IR
