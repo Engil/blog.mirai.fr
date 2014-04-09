@@ -27,6 +27,7 @@ Donc, dans cervoise, je génère ce LLVM-IR via le binding OCaml et le passe ens
 L'étape d'optimisation dans LLVM est fait entre les deux phases. C'est une optimisation qui prend (virtuellement) en entrée du LLVM-IR et qui retourne du LLVM-IR optimisé. Ce n'est *pas* réalisé durant la compilation du LLVM-IR vers l'assembleur natif.
 
 Tout cela dit, nous allons pouvoir voir, quelles sont les optimisations de LLVM dans le cas de Cervoise.
+
  * Il va faire de tout les appels de fonctions, des appels tails call (en rajoutant ```tail``` devant l'instruction ```call```)
  * Ensuite il va enlever les instructions qui ne servent à rien (grâce au [SSA](https://fr.wikipedia.org/wiki/Static_single_assignment_form)) [1].
  * Il va aussi faire de l'inlining là ou il peut.
