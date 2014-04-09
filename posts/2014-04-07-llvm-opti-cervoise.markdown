@@ -29,7 +29,7 @@ L'étape d'optimisation dans LLVM est fait entre les deux phases. C'est une opti
 Tout cela dit, nous allons pouvoir voir, quelles sont les optimisations de LLVM dans le cas de Cervoise.
 
  * Il va faire de tout les appels de fonctions, des appels tails call (en rajoutant ```tail``` devant l'instruction ```call```)
- * Ensuite il va enlever les instructions qui ne servent à rien (grâce au [SSA](https://fr.wikipedia.org/wiki/Static_single_assignment_form)) [1].
+ * Ensuite il va enlever les instructions qui ne servent à rien (grâce au [SSA](https://fr.wikipedia.org/wiki/Static_single_assignment_form)).
  * Il va aussi faire de l'inlining là ou il peut.
  * Ajout d'un attribut ```nounwind``` à chaque fonction. Cet attribut indique que la fonction ne lancera pas d'exceptions ou ne fera pas de choses bizarres avec son control flow (si j'ai bien saisi).
  * Ajout d'un attribut ```nocapture``` aux paramétres non-utilisés des fonctions (pour permettre la propagation de l'information).
