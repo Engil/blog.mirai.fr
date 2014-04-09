@@ -20,10 +20,6 @@ a, a:visited {
     color: #E33D51;
     text-decoration: none;
 }
-#menu>#navigation>a, #menu>#navigation:visited {
-    color: #555;
-    text-decoration: none;
-}
 
 .pam {
   list-style-type: none;
