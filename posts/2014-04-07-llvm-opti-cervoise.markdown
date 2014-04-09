@@ -4,7 +4,7 @@ tags: llvm, cervoise, optimisations
 author: jpdeplaix
 ---
 
-Venant d'ajouter un option d'optimisation dans [Cervoise](https://github.com/jpdeplaix/cervoise) via ce [commit](https://github.com/jpdeplaix/cervoise/commit/a3685b10c7fc6fb),
+Venant d'ajouter une option d'optimisation dans [Cervoise](https://github.com/jpdeplaix/cervoise) via ce [commit](https://github.com/jpdeplaix/cervoise/commit/a3685b10c7fc6fb),
 j'ai pu voir quelles étaient les optimisations faites par LLVM dans le cas d'un langage fonctionnel qui supprime ces types après compilation (voir [Type erasure](https://en.wikipedia.org/wiki/Type_erasure)) et qui n'a pas de types natifs.
 
 Avant de voir cela, quelques mots tout d'abord sur l'API OCaml (officielle) pour LLVM qui est ici utilisée. Celle-ci propose, via son module [Llvm.PassManager](https://github.com/llvm-mirror/llvm/blob/master/bindings/ocaml/llvm/llvm.mli#L2419), deux manières fines d'optimiser les fonctions.
